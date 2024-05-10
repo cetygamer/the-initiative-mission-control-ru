@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html>
+	<head>
+		<title>Mission Card Interractive Frame</title>
+		<link href="css/idGeneratedStyles.css" rel="stylesheet" type="text/css" />
+		<script src="script/idGeneratedScript.js" type="text/javascript"></script>
+		<style>
+		p {
+			text-align: center;
+			color:white;
+			font-family:arial
+		}
+		body 	{
+			background-color: rgb(53, 54, 77);
+			}
+		</style>
+	</head>
+	<body onload="displayWindowSize();"></body>
+  <div id="result"></div>
+	<body>
+		<table style="border:0px solid black;margin-left:auto;margin-right:auto;">
+			<tr>
+				<td style="text-align:center">
+						<img src="image/Mission%20Control%20Logo%20RU.png">
+						<br></br>
+				</td>
+			</tr>
+			<tr>
+				<table style="border:0px solid black;margin-left:15vw;margin-right:15vw;">
+					<tr>
+						<td style="text-align:center">
+							<label for="mission" style="color:white; font-size:22px; font-family:arial">Выберите задание:</label>
+							<select name="ms" id="mselect" onchange="setMission()" style="font-size:22px">
+								<option value="Mission_Card_Riddle_1.xhtml">Бонусное задание 1</option>
+								<option value="Mission_Card_Riddle_2.xhtml">Бонусное задание 2</option>
+								<option value="Mission_Card_Riddle_3.xhtml">Бонусное задание 3</option>
+								<option value="Mission_Card_Riddle_4.xhtml">Бонусное задание 4</option>
+								<option value="Mission_Card_Riddle_5.xhtml">Бонусное задание 5</option>
+								<option value="Mission_Card_Riddle_6.xhtml">Бонусное задание 6</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:center">
+							<br>
+							<label style="color:white; font-size:17px; font-family:arial">Выполняя эти задания, используйте все правила пост-кампании со стр. 41-42 руководства, в том числе правило по использованию карт достижений (карт секретов 21–25) в заданиях на больших прямоугольных полях и правило секретных проходов.</label>
+							<br>
+						</td>
+					</tr>
+				</table>
+			</tr>
+			<tr>
+				<td>
+					<div class='wrap'>
+						<iframe src="Mission_Card_Riddle_1.xhtml" id="mission-swap" frameborder="0">
+						</iframe>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Special thanks to our testers Emma Aw, Michael Feldman, Mary Ho, and Shannon Konieczka.</p>
+					<p>© 2021 Unexpected Games. All rights reserved.<a href="https://UnexpectedGames.com" style="color:white; font-family:arial">UnexpectedGames.com</a></p>
+					<br></br>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

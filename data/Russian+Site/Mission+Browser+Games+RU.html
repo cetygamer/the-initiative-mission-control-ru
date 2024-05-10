@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html>
+	<head>
+		<title>Mission Card Interractive Frame</title>
+		<link href="css/idGeneratedStyles.css" rel="stylesheet" type="text/css" />
+		<script src="script/idGeneratedScript.js" type="text/javascript"></script>
+		<style>
+		p {
+			text-align: left;
+			color:white;
+			font-size: 14pt;
+			font-family:arial
+		}
+		p2 {
+			text-align: left;
+			color:white;
+			font-size: 14pt;
+			font-family:arial
+		}
+		p3 {
+			text-align: center;
+			color:white;
+			font-size: 13pt;
+			font-family:arial
+		}
+		.rules {
+			color:white;
+			font-size:17px;
+			font-family:arial;
+			text-align:left;
+		}
+		
+		.monospace-font {
+		    text-transform: uppercase;
+			font-family: monospace;
+			font-size: calc(6.5px + 1vw);
+			font-weight:bold;
+			color:darkgreen!important;
+			line-height: 1.6;
+			text-align: left;
+			align-content: center;
+			vertical-align: middle;
+			z-index: 999;
+			position: absolute;
+			top: 47%;
+			left: 50%;
+			margin: 0 30% 8% -20%;
+			transform: translate(0,-50%);
+		}
+		.centered {
+		  z-index: 5;
+		  position: relative;
+		  padding-left: 20%;
+		  padding-right: 20%;
+		  padding-bottom: -100%;
+		  padding-top: -100%;
+		}
+		body 	{
+			background-color: rgb(53, 54, 77);
+			}
+		</style>
+	</head>
+	<body onload="displayWindowSize();"></body>
+  <div id="result"></div>
+	<body>
+		<table style="border:0px solid black;margin-left:auto;margin-right:auto;width:80%;">
+			<tr>
+				<td style="text-align:center">
+						<img src="image/Mission%20Control%20Logo%20RU.png">
+				</td>
+			</tr>
+				<tr>
+					<td style="text-align:center">
+							<label for="mission" style="color:white; font-size:22px; font-family:arial">Выберите задание:</label>
+							<select name="ms" id="mselect" onchange="setMission()" style="font-size:22px">
+								<option value="Mission_Card_Games_1.xhtml">Бонусное задание-головоломка 1</option>
+								<option value="Mission_Card_Games_2.xhtml">Бонусное задание-головоломка 2</option>
+								<option value="Mission_Card_Games_3.xhtml">Бонусное задание-головоломка 3</option>
+								<option value="Mission_Card_Games_4.xhtml">Бонусное задание-головоломка 4</option>
+								<option value="Mission_Card_Games_5.xhtml">Бонусное задание-головоломка 5</option>
+								<option value="Mission_Card_Games_6.xhtml">Бонусное задание-головоломка 6</option>
+								<option value="Mission_Card_Games_Blank.html">Эпилог</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:center">
+							<br>
+							<p class="rules" id='Not_All_Clues' hidden>
+							<b>Не все улики размещаются на поле во время подготовки:</b> это задание не использует жетоны улик всех цветов. Так сделано специально. Используйте случайные жетоны при подготовке к заданию, а остальные верните в коробку, не смотря на лицевую сторону.<br><br></p>
+							
+							<p class="rules" id='Faceup_Tokens' hidden>
+							<b>Раскрытые жетоны улик в подготовке:</b> это задание требует, чтобы вы разместили особые жетоны улик лицевой стороной вверх на игровом поле во время подготовки к игре. В первую очередь найдите эти жетоны и разместите их на поле, затем переверните остальные жетоны лицевой стороной вниз, перемешайте и разместите жетоны так, как показано на карте задания.
+							<br><br></p>	
+										
+							<p class="rules" id='Raising_Windows' hidden><b>Приподнять шторку:</b> это задание позволяет приподнимать шторки, вместо того чтобы открывать или закрывать их полностью. Чтобы приподнять шторку, зафиксируйте её в таком положении, в котором будет полностью видно символы и над, и под шторкой. Для того чтобы приподнять шторку в задании, просто щёлкните по ней один раз. Повторное нажатие на приподнятую шторку закроет ту часть, которая изначально была видна.<br><br></p>
+							
+							<p class="rules" id='Starting_Windows' hidden><b>Исходное положение шторок:</b> в этом задании шторки могут быть изначально как открыты, так и закрыты. Поскольку задания выложены в электронном виде, вам не нужно ничего подготавливать перед игрой. Просто следуйте представленной раскладке.<br><br></p>
+							
+							<label class="rules" id="General_Rules">Выполняя эти задания, используйте все правила «головоломок», которые вы найдёте <a href="../the-initiative-set-2-rules-ru.html" style="color:white">здесь.</a></label>
+							<br>
+						</td>
+					</tr>
+					<tr id="Epilogue" style="align-items: center" hidden>
+						<td>
+						<div class="centered">
+							<img src="image/Mission_Control_Computer.png" style="width:100%;display: inline-block;">
+							<div class="monospace-font">
+								И вновь приветствую, агенты. Изумительно! Кажется, единственный способ избежать проигрыша — не играть. <br><br> Никто до этого момента не побеждал <<Немезиду>>. Как же звучит это знаменитое человеческое выражение? Ах да, всё бывает в первый раз.
+							</div>
+						</div>
+						<p2><br><br>Спасибо, что сыграли во все бонусные задания-головоломки. Мы очень надеемся, что вам было так же интересно проходить наши задания, как нам — их создавать!<br><br> 
+						Возможно, вы помните, как в самом начале вам посоветовали: «И будьте начеку! Если вам покажется, что что-то находится не на своём месте, возможно, это важно. «Немезида» любит подразнить людей, оставляя подсказки на виду». Заметили ли вы что-нибудь странное или не на своём месте в этих заданиях?<br><br> 
+						Если вам удалость заметить подсказки «Немезиды», поздравляем с повышением навыков внимания и дедукции! Мы надеемся, они помогли вам решить некоторые задания.<br>
+						Если вы не заметили эти подсказки, ниже мы всё расскажем. ЕСЛИ ВЫ ЕЩЁ НЕ ЗАВЕРШИЛИ ВСЕ ЗАДАНИЯ, НЕ ЧИТАЙТЕ ДАЛЬШЕ И НЕ КРУТИТЕ СТРАНИЧКУ ВНИЗ.</p2>
+						<br><br><br><br><br><br><br><br><br><br><br>
+						<div style="width:40%;display:inline-block;" >
+							<p2>Подготовка к первому заданию тематически вдохновлена компьютерным пасьянсом «Косынка» (чередование цветов жетонов улик, большая стопка из 6 улик в правом нижнем углу, символизирующая колоду карт).<br><br><br><br><br></p2></div>
+						<div style="width:50%;display:inline-block;">
+							<img src="image/Games_Mission%20Cards.jpg" style="width:100%;"></img></div><br><br>
+						<p2>
+							За исключением первого задания, все остальные включают в себя некоторые подсказки о том, как решить головоломки, и эти подсказки вы получаете при подготовке. Например, жетоны улик в задании 2 при подготовке расставляются по диагонали, как в шашках, и только по одному жетону на квадрат. Знакомый рисунок, не правда ли?
+							<br><br>
+							Заметили ли вы также, что красные жетоны улик размещены точно в тех же местах, где находятся красные шашки? Интересно, что же означают другие цвета жетонов улик…<br><br></2p> 
+						<img src="image/Games_Mission%20Cards3.jpg" style="width:45%"></img>&nbsp;&nbsp;&nbsp;
+						<img src="image/Games_Mission%20Cards4.jpg" style="width:45%"></img>  
+						<br><br>
+						<p2>Теперь, когда вам раскрыли глаза на происходящее, взгляните ещё раз на карты с заданиями и попробуйте найти подсказки, оставленные <em>Немезидой</em>. Только представьте, если бы вы заметили их в первый раз. Будьте внимательны, агенты, вскоре мы вновь обратимся к вам за помощью!
+						</p2>
+						<br><br>
+					</td>
+				</tr>
+			<tr>
+				<td>
+					<div class="wrap" id="Mission_Card">
+						<iframe src="Mission_Card_Games_1.xhtml" id="mission-swap" frameborder="0">
+						</iframe>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center">
+					<p3><em>Разработчик заданий:</em> Стивен Кимбалл</p3>
+					<br><br>
+					<p3><em>Игру тестировали:</em> Джошуа Бепплер, Мэри Бепплер, Виктория Бепплер, Николь Кляйншниттгер, Крис Подани, Мэтт Поуи, Грейс Пози и Джонас Вопель</p3>
+					<br><br>
+					<p3>© 2021 Unexpected Games. All rights reserved.<a href="https://UnexpectedGames.com" style="color:white; font-family:arial">UnexpectedGames.com</a></p3>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

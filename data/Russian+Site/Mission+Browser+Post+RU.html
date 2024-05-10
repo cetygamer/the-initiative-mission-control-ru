@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html>
+	<head>
+		<title>Mission Card Interractive Frame</title>
+		<link href="css/idGeneratedStyles.css" rel="stylesheet" type="text/css" />
+		<script src="script/idGeneratedScript.js" type="text/javascript"></script>
+		<style>
+		body 	{
+			background-color: rgb(53, 54, 77);
+			}
+		</style>
+	</head>
+	<body onload="displayWindowSize();"></body>
+  <div id="result"></div>
+	<body>
+		<table style="border:0px solid black;margin-left:auto;margin-right:auto;">
+			<tr>
+				<td style="text-align:center">
+						<img src="image/Mission%20Control%20Logo%20RU.png">
+						<br></br>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align:center">
+				  <label for="mission" style="color:white; font-size:22px; font-family:arial">Выберите задание:</label>
+				  <select name="ms" id="mselect" onchange="setMission()" style="font-size:22px">
+					<option value="fMission_Card-16.xhtml">СЛОВЕСНОЕ ЗАДАНИЕ 1</option>
+					<option value="fMission_Card-17.xhtml">СЛОВЕСНОЕ ЗАДАНИЕ 2</option>
+					<option value="fMission_Card-18.xhtml">СЛОВЕСНОЕ ЗАДАНИЕ 3</option>
+					<option value="fMission_Card-19.xhtml">СЛОВЕСНОЕ ЗАДАНИЕ 4</option>
+					<option value="fMission_Card-20.xhtml">СЛОВЕСНОЕ ЗАДАНИЕ 5</option>
+					<option value="fMission_Card-21.xhtml">СЛОВЕСНОЕ ЗАДАНИЕ 6</option>
+					<option value="fMission_Card-22.xhtml">СЛОВЕСНОЕ ЗАДАНИЕ 7</option>
+					<option value="fMission_Card-23.xhtml">СЛОВЕСНОЕ ЗАДАНИЕ 8</option>
+					<option value="fMission_Card-24.xhtml">ЧИСЛОВОЕ ЗАДАНИЕ 1</option>
+					<option value="fMission_Card-25.xhtml">ЧИСЛОВОЕ ЗАДАНИЕ 2</option>
+					<option value="fMission_Card-26.xhtml">ЧИСЛОВОЕ ЗАДАНИЕ 3</option>
+					<option value="fMission_Card-27.xhtml">ЧИСЛОВОЕ ЗАДАНИЕ 4</option>
+					<option value="fMission_Card-28.xhtml">ЧИСЛОВОЕ ЗАДАНИЕ 5</option>
+					<option value="fMission_Card-29.xhtml">ЧИСЛОВОЕ ЗАДАНИЕ 6</option>
+					<option value="fMission_Card-30.xhtml">ЧИСЛОВОЕ ЗАДАНИЕ 7</option>
+					<option value="fMission_Card-31.xhtml">ЧИСЛОВОЕ ЗАДАНИЕ 8</option>
+					<option value="fMission_Card-32.xhtml">УНИКАЛЬНОЕ ЗАДАНИЕ 1</option>
+					<option value="fMission_Card-33.xhtml">УНИКАЛЬНОЕ ЗАДАНИЕ 2</option>
+					<option value="fMission_Card-34.xhtml">УНИКАЛЬНОЕ ЗАДАНИЕ 3</option>
+					<option value="fMission_Card-35.xhtml">УНИКАЛЬНОЕ ЗАДАНИЕ 4</option>
+					<option value="fMission_Card-36.xhtml">УНИКАЛЬНОЕ ЗАДАНИЕ 5</option>
+					<option value="fMission_Card-37.xhtml">УНИКАЛЬНОЕ ЗАДАНИЕ 6</option>
+					<option value="fMission_Card-38.xhtml">УНИКАЛЬНОЕ ЗАДАНИЕ 7</option>
+					<option value="fMission_Card-39.xhtml">УНИКАЛЬНОЕ ЗАДАНИЕ 8</option>
+				  </select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class='wrap'>
+						<iframe src="fMission_Card-16.xhtml" id="mission-swap" frameborder="0">
+						</iframe>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align:center">
+					<label for="legal" style="color:white; font-family:arial">© 2021 Unexpected Games. All rights reserved. </label>
+					<a href="https://UnexpectedGames.com" style="color:white; font-family:arial">UnexpectedGames.com</a>
+				<br></br>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

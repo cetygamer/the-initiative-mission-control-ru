@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+	<head>
+		<title>Mission Card Interractive Frame</title>
+		<link href="css/idGeneratedStyles%20Goliath%20Main%20Page.css" rel="stylesheet" type="text/css" />
+		<script src="script/idGeneratedScript%20Main%20Goliath.js" type="text/javascript"></script>
+		<style>
+		p {
+			text-align: left;
+			color:white;
+			font-size: 14pt;
+			font-family:arial
+		}
+		p2 {
+			text-align: left;
+			color:white;
+			font-size: 14pt;
+			font-family:arial
+		}
+		p3 {
+			text-align: center;
+			color:white;
+			font-size: 13pt;
+			font-family:arial
+		}
+		p4 {
+			text-align: center;
+			color:white;
+			font-size: 18pt;
+			font-family:arial
+		}
+		.rules {
+			color:white;
+			font-size:17px;
+			font-family:arial;
+			text-align:center;
+		}
+		
+		.monospace-font {
+		    text-transform: uppercase;
+			font-family: monospace;
+			font-size: calc(6.5px + 1vw);
+			font-weight:bold;
+			color:darkgreen!important;
+			line-height: 1.6;
+			text-align: left;
+			align-content: center;
+			vertical-align: middle;
+			z-index: 999;
+			position: absolute;
+			top: 47%;
+			left: 50%;
+			margin: 0 30% 8% -20%;
+			transform: translate(0,-50%);
+		}
+		.centered {
+		  z-index: 5;
+		  position: relative;
+		  padding-left: 20%;
+		  padding-right: 20%;
+		  padding-bottom: -100%;
+		  padding-top: -100%;
+		}
+		body 	{
+			background-color: rgb(53, 54, 77);
+			}
+		</style>
+	</head>
+	<body onload="displayWindowSize_Goliath();"></body>
+  <div id="result"></div>
+	<body>
+		<table style="border:0px solid black;margin-left:auto;margin-right:auto;width:80%;">
+			<tr>
+				<td style="text-align:center">
+						<img src="image/Mission%20Control%20Logo%20RU.png">
+				</td>
+			</tr>
+				<tr>
+					<td style="text-align:center">
+							<label for="mission" style="color:white; font-size:22px; font-family:arial">Выберите задание:</label>
+							<select name="ms" id="mselect" onchange="setMission()" style="font-size:22px">
+								<option value="Mission_Card_Goliath_1.xhtml">Бонусное задание Голиаф 1</option>
+								<option value="Mission_Card_Goliath_2.xhtml">Бонусное задание Голиаф 2</option>
+								<option value="Mission_Card_Goliath_3.xhtml">Бонусное задание Голиаф 3</option>
+								<option value="Mission_Card_Goliath_4.xhtml">Бонусное задание Голиаф 4</option>
+								<option value="Mission_Card_Goliath_5.xhtml">Бонусное задание Голиаф 5</option>
+								<option value="Mission_Card_Games_Blank.html">Бонусное задание Голиаф 6</option>
+							</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<br>
+						<p id="Epilogue" class="rules" hidden>
+							<p4><b>ЗАДАНИЕ ЗАБЛОКИРОВАНО</b></p4><br><BR>
+							Чтобы сыграть в последнее задание, вы должны использовать всё, что узнали о проекте Голиаф.<br>Если вы думаете, что знаете пароль <b>(БОЛЬШИМИ БУКВАМИ)</b>, нажмите <a href="../goliath-6-ru.html" style="color:red">сюда</a>.
+								</p>
+					</td>
+				</tr>	
+			<tr>
+				<td>
+					<div class="wrap_goliath" id="Mission_Card">
+						<iframe src="Mission_Card_Goliath_1.xhtml" id="mission-swap" frameborder="0">
+						</iframe>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center">
+					<p3><em>Разработчик заданий:</em> Josh Beppler</p3>
+					<br><br>
+					<p3><em>Игру тестировали:</em> Мэри Бепплер, Виктория Бепплер, Джейк Диксон, Николь Кляйншниттгер, Кори Коничка, Джон Парк, Крис Подани, Джонас Вопель</p3>
+					<br><br>
+					<p3>© 2023 Unexpected Games. All rights reserved. <a href="https://UnexpectedGames.com" style="color:white; font-family:arial">UnexpectedGames.com</a></p3>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
